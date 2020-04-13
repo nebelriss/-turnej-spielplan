@@ -19,5 +19,8 @@
     "spielplan",
     "tournament",
     "gameplan-generator"
-  ]
+  ],
+  "devDependencies": {
+    "jest": "^25.3.0"
+  }
 }
