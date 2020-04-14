@@ -5,13 +5,17 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "homepage": "https://github.com/nebelriss/-turnej-spielplan#readme",
-  "repository": "https://github.com/nebelriss/-turnej-spielplan.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nebelriss/-turnej-spielplan.git"
+  },
   "bugs": {
     "url": "https://github.com/nebelriss/-turnej-spielplan/issues"
   },
   "engines": {
     "node": ">=10.20.1"
   },
+  "scripts": {},
   "files": [
     "/lib/index.js"
   ],
