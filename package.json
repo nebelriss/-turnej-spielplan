@@ -15,7 +15,10 @@
   "engines": {
     "node": ">=10.20.1"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
   "files": [
     "/lib/index.js"
   ],
