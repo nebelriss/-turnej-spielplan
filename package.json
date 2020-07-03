@@ -25,7 +25,10 @@
   "keywords": [
     "spielplan",
     "tournament",
-    "gameplan-generator"
+    "game",
+    "match",
+    "gameplan-generator",
+    "schedule"
   ],
   "devDependencies": {
     "jest": "^25.3.0"
