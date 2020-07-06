@@ -1,7 +1,7 @@
 {
   "name": "@turnej/spielplan",
   "author": "Michel Heiniger <git@heiniger.io>",
-  "license": "MIT",
+  "license": "LGPL-2.1-only",
   "version": "1.0.0",
   "main": "lib/index.js",
   "homepage": "https://github.com/nebelriss/-turnej-spielplan#readme",
