@@ -13,15 +13,15 @@ yarn add @turnej/spielplan
 ## Usage
 
 ```js
-const spielplan = require("@turnej/spielplan");
+const spielplan = require('@turnej/spielplan');
 
-const games = spielplan.create(10);
+const games = spielplan(10);
 ```
 
 ```js
-import spielplan from "@turnej/spielplan";
+import spielplan from '@turnej/spielplan';
 
-const games = spielplan.create(10);
+const games = spielplan(10);
 ```
 
 ## API
