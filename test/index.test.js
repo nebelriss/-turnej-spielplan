@@ -1,4 +1,4 @@
-const spielplan = require('./index');
+const spielplan = require('../lib/index');
 
 test('should return the correct tournament rounds / pairings', () => {
   const expectedAnswer = {
