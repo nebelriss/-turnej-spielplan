@@ -1,5 +1,7 @@
 # @turnej/spielplan
 
+This library
+
 ## Installation
 
 Install the package with:
@@ -24,10 +26,6 @@ import spielplan from '@turnej/spielplan';
 const games = spielplan(10);
 ```
 
-## API
-
-### `.create(players, options)`
-
-##### players
+## Options
 
 Amount of participant.
