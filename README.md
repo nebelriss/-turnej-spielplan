@@ -1,6 +1,6 @@
 # @turnej/spielplan
 
-This library
+This packet creates a schedule based on the specified number of players.
 
 ## Installation
 
@@ -16,16 +16,51 @@ yarn add @turnej/spielplan
 
 ```js
 const spielplan = require('@turnej/spielplan');
-
-const games = spielplan(10);
+const schedule = spielplan(6);
 ```
 
 ```js
 import spielplan from '@turnej/spielplan';
-
-const games = spielplan(10);
+const schedule = spielplan(6);
 ```
 
-## Options
+```js
+games = {
+  1: [
+    { home: 1, away: 2 },
+    { home: 3, away: 4 },
+    { home: 5, away: 6 },
+  ],
+  2: [
+    { home: 4, away: 1 },
+    { home: 2, away: 6 },
+    { home: 3, away: 5 },
+  ],
+  3: [
+    { home: 1, away: 6 },
+    { home: 4, away: 5 },
+    { home: 2, away: 3 },
+  ],
+  4: [
+    { home: 5, away: 1 },
+    { home: 6, away: 3 },
+    { home: 4, away: 2 },
+  ],
+  5: [
+    { home: 1, away: 3 },
+    { home: 5, away: 2 },
+    { home: 6, away: 4 },
+  ],
+};
+```
 
-Amount of participant.
+## Description
+
+spielplan(playerCount, config)
+
+### config
+
+- mapHomeAway
+- mapHomeAwayKeys
+- startingRoundType
+- mapPlayerNames
