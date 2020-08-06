@@ -157,3 +157,44 @@ test('should retrun the schedule where in the first round the upper half vs lowe
   );
 });
 
+test('should return the correct tournament rounds maped with the player names', () => {
+  const expectedAnswer = {
+    1: [
+      { home: 'Player A', away: 'Player B' },
+      { home: 'Player C', away: 'Player D' },
+      { home: 'Player E', away: 'Player F' },
+    ],
+    2: [
+      { home: 'Player D', away: 'Player A' },
+      { home: 'Player B', away: 'Player F' },
+      { home: 'Player C', away: 'Player E' },
+    ],
+    3: [
+      { home: 'Player A', away: 'Player F' },
+      { home: 'Player D', away: 'Player E' },
+      { home: 'Player B', away: 'Player C' },
+    ],
+    4: [
+      { home: 'Player E', away: 'Player A' },
+      { home: 'Player F', away: 'Player C' },
+      { home: 'Player D', away: 'Player B' },
+    ],
+    5: [
+      { home: 'Player A', away: 'Player C' },
+      { home: 'Player E', away: 'Player B' },
+      { home: 'Player F', away: 'Player D' },
+    ],
+  };
+  expect(
+    spielplan(6, {
+      mapPlayerNames: [
+        'Player A',
+        'Player B',
+        'Player C',
+        'Player D',
+        'Player E',
+        'Player F',
+      ],
+    }),
+  ).toEqual(expectedAnswer);
+});
