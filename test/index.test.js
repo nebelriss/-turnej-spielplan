@@ -123,3 +123,37 @@ test('should return the rounds with custom keys for home and away', () => {
     }),
   ).toEqual(expectedAnswer);
 });
+
+test('should retrun the schedule where in the first round the upper half vs lower half', () => {
+  const expectedAnswer = {
+    1: [
+      { home: 1, away: 4 },
+      { home: 2, away: 5 },
+      { home: 3, away: 6 },
+    ],
+    2: [
+      { home: 5, away: 1 },
+      { home: 4, away: 6 },
+      { home: 2, away: 3 },
+    ],
+    3: [
+      { home: 1, away: 6 },
+      { home: 5, away: 3 },
+      { home: 4, away: 2 },
+    ],
+    4: [
+      { home: 3, away: 1 },
+      { home: 6, away: 2 },
+      { home: 5, away: 4 },
+    ],
+    5: [
+      { home: 1, away: 2 },
+      { home: 3, away: 4 },
+      { home: 6, away: 5 },
+    ],
+  };
+  expect(spielplan(6, { startingRoundType: 'secondHalf' })).toEqual(
+    expectedAnswer,
+  );
+});
+
